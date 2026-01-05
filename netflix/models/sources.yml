@@ -7,9 +7,5 @@ sources:
       - name: RAW_GENOME_TAGS
       - name: RAW_LINKS
       - name: RAW_MOVIES
-        columns:
-          - name: movie_id
-          - name: title
-          - name: genres
       - name: RAW_RATINGS
       - name: RAW_TAGS
