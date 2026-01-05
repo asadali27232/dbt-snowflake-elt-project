@@ -12,9 +12,13 @@ clean-targets:
 models:
   netflix:
     +database: MOVIELENS
-    +schema: ANALYTICS
     +materialized: view
+    staging:
+      +schema: STAGING
+      +materialized: view
     dim:
+      +schema: ANALYTICS
       +materialized: table
     fact:
+      +schema: ANALYTICS
       +materialized: table
