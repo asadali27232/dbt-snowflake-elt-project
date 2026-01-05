@@ -18,6 +18,6 @@ models:
   netflix:
     # Materialize staging models as views, and marts as tables
     staging:
-      +materialized: view
+      +materialized: view 
     marts:
       +materialized: table

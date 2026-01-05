@@ -1,0 +1,15 @@
+sources:
+  - name: ntx
+    database: MOVIELENS  
+    schema: RAW  
+    tables:
+      - name: RAW_GENOME_SCORES
+      - name: RAW_GENOME_TAGS
+      - name: RAW_LINKS
+      - name: RAW_MOVIES
+        columns:
+          - name: movie_id
+          - name: title
+          - name: genres
+      - name: RAW_RATINGS
+      - name: RAW_TAGS

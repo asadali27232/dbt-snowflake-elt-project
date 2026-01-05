@@ -4,3 +4,4 @@ logs/
 target/
 profiles.yml
 .user.yml
+.vscode/
