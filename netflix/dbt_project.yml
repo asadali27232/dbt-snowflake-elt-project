@@ -9,14 +9,11 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-seeds:
-  # Builds seeds into '<your_schema_name>_raw'
-  netflix:
-    +schema: raw
-
 models:
   netflix:
-    +materialized: view 
+    +database: MOVIELENS
+    +schema: ANALYTICS
+    +materialized: view
     dim:
       +materialized: table
     fact:
