@@ -1,12 +1,17 @@
-# 🥪 The Jaffle Shop 🦘
+# Netflix Metadata & Ratings Transformation (dbt)
 
-_powered by the dbt Fusion engine_
+This directory contains the core **dbt project** for transforming MovieLens/Netflix data in Snowflake.
 
-Welcome! This is a sandbox project for exploring the basic functionality of Fusion. It's based on a fictional restaurant called the Jaffle Shop that serves [jaffles](https://en.wikipedia.org/wiki/Pie_iron).
+## Layers
 
-To get started:
-1. Set up your database connection in `~/.dbt/profiles.yml`. If you got here by running `dbt init`, you should already be good to go.
-2. Run `dbt build`. That's it!
+-   **Staging**: `models/staging/` - Cleaned source tables prefix with `src_`.
+-   **Dimensional**: `models/dim/`, `models/fact/` - Star schema models for analytics.
+-   **Marts**: `models/marts/` - Pre-calculated aggregates and business logic.
 
-> [!NOTE]
-> If you're brand-new to dbt, we recommend starting with the [dbt Learn](https://learn.getdbt.com/) platform. It's a free, interactive way to learn dbt, and it's a great way to get started if you're new to the tool.
+## Getting Started
+
+1. Install dbt packages: `dbt deps`
+2. Load seeds: `dbt seed`
+3. Run the pipeline: `dbt build`
+
+Refer to the [Root README](../README.md) for full project documentation and architecture details.
