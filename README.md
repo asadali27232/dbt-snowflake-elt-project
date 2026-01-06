@@ -1,4 +1,4 @@
-# Snowflake-Powered Netflix ELT: Modern Data Engineering with dbt
+# Modern Data Modeling with dbt on Snowflake
 
 ---
 
