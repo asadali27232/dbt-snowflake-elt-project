@@ -4,5 +4,5 @@ WITH raw_ratings AS (
 SELECT USERID as user_id,
        MOVIEID as movie_id,
        RATING as rating,
-       CAST(TIMESTAMP as TIMESTAMP_LTZ) as timestamp
+       CAST(TIMESTAMP as TIMESTAMP_LTZ) as rating_timestamp
 FROM raw_ratings
