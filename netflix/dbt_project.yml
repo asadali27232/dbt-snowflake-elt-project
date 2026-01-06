@@ -22,3 +22,6 @@ models:
     fact:
       +schema: ANALYTICS
       +materialized: table
+    marts:
+      +schema: ANALYTICS
+      +materialized: table

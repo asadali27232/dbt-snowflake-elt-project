@@ -4,5 +4,5 @@ WITH raw_tags as (
 SELECT USERID as user_id,
        MOVIEID as movie_id,
        TAG as tag,
-       CAST(TIMESTAMP as TIMESTAMP_LTZ) as timestamp
+       CAST(TIMESTAMP as TIMESTAMP_LTZ) as tag_timestamp
 FROM raw_tags
